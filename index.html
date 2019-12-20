@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Wilhem Barbier</title>
+        <style>
+        @font-face { 
+            font-family: "et-book";
+            src:  url(../Downloads/et-book-roman-line-figures.woff);
+            font-weight: normal;
+            font-style: normal; 
+        }
+        @font-face {
+            font-family: "Linux Libertine";
+            src: url(./LinLibertine_Rah.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-color: #fffff8;
+            margin: auto;
+            width: 80%;
+            font-family: "Linux Libertine";
+            font-size: 1.2rem;
+        }
+
+        img {
+            float: left;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            /* grid-column-gap: 0px; */
+        }
+
+        .project-desc {
+            margin-left: 5%;
+        }
+
+        h1 {
+            display: inline;
+        }
+
+        #links {
+            float: right;
+            margin-top: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Wilhem Barbier</h1>
+        <span id="links">github, email, cv, ...</span>
+        <hr/>
+        <h2>Projects</h2>
+        <!--Ordre: realtime, rasterizer, gbemu, path tracer-->
+        <div class="container">
+            <div class="project-img">
+                <img src="http://benedikt-bitterli.me/images/Tungsten.jpg"/>
+            </div>
+            <div class="project-desc">
+                <h3>GameBoy emulator</h3>
+                <p>A WIP GameBoy emulator: as of now it can start a game of Tetris. It also has an integrated debugger with a memory and VRAM viewer, a reverse stepping mechanism, blabla</p>
+            </div>
+            <div class="project-img">
+            </div>
+            <div class="project-desc">
+                <h3>Software Rasterizer</h3>
+                <p>I wrote this software rasterizer after tinkering with OpenGL because I wanted to understand how it works under the hood.</p>
+            </div>
+            <div class="project-img">
+            </div>
+            <div class="project-desc">
+                <h3>Path tracer</h3>
+                <p>Bla bli blou monte carlo</p>
+            </div>
+            <div class="project-img">
+            </div>
+            <div class="project-desc">
+                <h3>Real-time Renderer</h3>
+                <p>Haha OpenGL. Normal mapping, ambient occlusion, deferred rendering, ...</p>
+            </div>
+        </div>
+    </body>
+</html>
