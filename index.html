@@ -3,35 +3,45 @@
         <meta charset="utf8"/>
         <title>Wilhem Barbier</title>
         <style>
-        @font-face { 
-            font-family: "et-book";
-            src:  url(../Downloads/et-book-roman-line-figures.woff);
-            font-weight: normal;
-            font-style: normal; 
-        }
+
         @font-face {
             font-family: "Linux Libertine";
-            src: url(./LinLibertine_Rah.ttf);
+            src: url(res/fonts/LinLibertine_Rah.ttf);
             font-weight: normal;
             font-style: normal;
         }
+
+        @font-face {
+            font-family: "Linux Libertine";
+            src: url(res/fonts/LinLibertine_RIah.ttf);
+            font-weight: normal;
+            font-style: italic;
+        }
         body {
             background-color: #fffff8;
-            margin: auto;
-            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
             font-family: "Linux Libertine";
             font-size: 1.2rem;
         }
 
+        @media (min-width: 30rem) {
+            body {
+                width: 80%;
+            }
+        }
+
         img {
-            float: left;
+            /* display: block;
+            margin-left: auto;
+            margin-right: auto; */
         }
 
         .container {
             display: grid;
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
-            /* grid-column-gap: 0px; */
+            grid-row-gap: 10px;
         }
 
         .project-desc {
@@ -44,19 +54,49 @@
 
         #links {
             float: right;
-            margin-top: 5px;
+            font-size: 1.1em;
+            margin-top: 10px;
+            /* margin-right: 10px; */
+        }
+
+        a:link {
+            /* text-decoration: none; */
+            color: inherit;
+            font-style: italic;
+
+        }
+
+        a:visited {
+            color: inherit;
         }
         </style>
     </head>
     <body>
         <h1>Wilhem Barbier</h1>
-        <span id="links">github, email, cv, ...</span>
+        <span id="links">
+            <a href="https://github.com/wbrbr">github</a>,
+            <a href="mailto:wilhem.b@free.fr">email</a>,
+            <a href="cv.html">cv</a></span>
         <hr/>
         <h2>Projects</h2>
         <!--Ordre: realtime, rasterizer, gbemu, path tracer-->
         <div class="container">
             <div class="project-img">
-                <img src="http://benedikt-bitterli.me/images/Tungsten.jpg"/>
+                <img src="res/img/rasterizer.png" width=75%/>
+            </div>
+            <div class="project-desc">
+                <h3>Software Rasterizer</h3>
+                <p>I wrote this software rasterizer after tinkering with OpenGL because I wanted to understand how it works under the hood.</p>
+            </div>
+            <div class="project-img">
+                <img src="res/img/realtime.png" width=80%/>
+            </div>
+            <div class="project-desc">
+                <h3>Real-time Renderer</h3>
+                <p>Haha OpenGL. Normal mapping, ambient occlusion, deferred rendering, ...</p>
+            </div>
+            <div class="project-img">
+                <img src="res/img/gbemu.png" width=70%/>
             </div>
             <div class="project-desc">
                 <h3>GameBoy emulator</h3>
@@ -65,20 +105,8 @@
             <div class="project-img">
             </div>
             <div class="project-desc">
-                <h3>Software Rasterizer</h3>
-                <p>I wrote this software rasterizer after tinkering with OpenGL because I wanted to understand how it works under the hood.</p>
-            </div>
-            <div class="project-img">
-            </div>
-            <div class="project-desc">
                 <h3>Path tracer</h3>
-                <p>Bla bli blou monte carlo</p>
-            </div>
-            <div class="project-img">
-            </div>
-            <div class="project-desc">
-                <h3>Real-time Renderer</h3>
-                <p>Haha OpenGL. Normal mapping, ambient occlusion, deferred rendering, ...</p>
+                <p>Bla bli blou monte carlo. BVH ray-triangle intersection</p>
             </div>
         </div>
     </body>
