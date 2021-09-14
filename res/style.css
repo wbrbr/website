@@ -25,12 +25,6 @@ body {
     }
 }
 
-img {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
 .container {
     display: grid;
     grid-template-columns: auto auto;
@@ -42,8 +36,13 @@ img {
     margin-left: 5%;
 }
 
-h1 {
+/* h1 {
     display: inline;
+} */
+
+.navbar {
+    font-size: 1.1em;
+    margin-top: 10px;
 }
 
 #links {

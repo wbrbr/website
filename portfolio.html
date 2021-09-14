@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Wilhem Barbier - Portfolio</title>
+        <link rel="stylesheet" href="res/style.css"/>
+    </head>
+    <body>
+        <h1 style='display: inline;'>Wilhem Barbier</h1>
+        <div width='100%' style='display:inline-block;margin-left: 5em'>
+            <span class='navbar' style='float:left;'>
+                <a href='/'>home</a>,
+                <a href='/portfolio.html'>portfolio</a>
+            </span>
+            </div>
+        <span id="links" class='navbar'>
+            <a href="https://github.com/wbrbr">github</a>,
+            <a href="mailto:wilhem.b@free.fr">email</a>,
+            <a href="res/cv.pdf">cv</a></span>
+            </span>
+</span>
+        <hr/>
+
+        <h1>Portfolio</h1>
+
+        <h2>C++/OpenGL rendering engine</h2>
+        <h3>Features</h3>
+        Move the slider to the left to deactive the feature, and to the right to activate it!
+
+        <ul><li>Shadow mapping (PCF)</li></ul>
+        <div width='50vw'>
+        <img-comparison-slider>
+            <img slot="first" width="100%" src="res/img/screenshot_final.png" >
+            <img slot="second" width="100%" src="res/img/screenshot_noshadow.png" >
+        </img-comparison-slider>
+        </div>
+        <ul><li>Screen-Space Ambient Occlusion</li></ul>
+        <div width='50vw'>
+        <img-comparison-slider>
+            <img slot="first" src="res/img/screenshot_final.png" width="100%">
+            <img slot="second" src="res/img/screenshot_nossao.png" width="100%">
+        </img-comparison-slider>
+        </div>
+        <ul><li>Temporal Anti-Aliasing</li></ul>
+        <div width='50vw'>
+        <img-comparison-slider>
+            <img slot="first" src="res/img/screenshot_final.png" width="100%">
+            <img slot="second" src="res/img/screenshot_noaa.png" width="100%">
+        </img-comparison-slider>
+        </div></ul>
+        
+        <h2>Shaders</h2>
+
+        <p>Some fullscreen shaders inspired by the demoscene and the shadertoy community.</p>
+        <ul><li>Octa (<a href='https://www.shadertoy.com/view/tlBSzh'>shadertoy</a>)</li></ul>
+        <!-- <div><iframe width='100%' height='100%' frameborder='0' src='https://www.youtube.com/embed/xNrCCMl2uOI'></iframe></div> -->
+        <div><iframe src="https://player.vimeo.com/video/605094622?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=ba222d0ced" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Octa"></iframe></div>
+        
+        <ul><li>Ocean</li></ul>
+        <div>
+            <iframe id="ytplayer" src='https://www.youtube.com/embed/z4InXr-Hj5A' type="text/html" width="100%" height="100%" frameborder='0'></iframe>
+        </div>
+        <!-- <div width='50%'>
+            <iframe id="ytplayer" type="text/html" width="100%" height="100%"
+  src="http://www.youtube.com/embed/M7lc1UVf-VE"
+  frameborder="0"/>
+        </div> -->
+    </body>
+        <script
+  defer
+  src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"
+/>
+</html>
