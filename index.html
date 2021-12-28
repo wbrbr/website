@@ -19,16 +19,33 @@
             </span>
 </span>
         <hr/>
-        <h1>Projects</h1>
-        <!--Ordre: realtime, rasterizer, gbemu, path tracer-->
+        <h1>Experience</h1>
+        <div class='container'>
+            <div class='projet-img'>
+                <img src='res/img/U_Logo_Black_RGB.svg' width='75%' />
+            </div>
+            <div class='project-desc'>
+                <h3>Graphics research internship at Unity Grenoble</h3>
+                <p><i>To be done</i> (February-August 2022)</p>
+            </div>
+            <div class='project-img'>
+                <img src='res/img/lightmap_interpolation.png' width=90% />
+            </div>
+            <div class='project-desc'>
+                <h3>Real-time global illumination using lightmap interpolation</h3>
+                <p>I did a part-time research project on diffuse real-time global illumination. This project was a collaboration between Cyril Soler (INRIA Grenoble) and Laurent Belcour (Unity Grenoble).</p>
+            </div>
+        </div>
+        <h1>Personal projects</h1>
         <div class="container">
             <div class="project-img">
                 <img src="res/img/realtime.png" width=75% />
             </div>
             <div class="project-desc">
                 <h3>Real-time Renderer</h3>
-                <p>A real-time deferred renderer using OpenGL. It is based on <a class="no-italics" href="https://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf">the standard Unreal 4 rendering model</a>. It also does normal mapping and ambient occlusion among other things.</p>
+                <p>A real-time deferred renderer using OpenGL. Its most notable features are image-based lighting, normal mapping, dynamic shadows using shadow mapping, basic temporal antialiasing and ambient occlusion.
                 <p><a href="https://github.com/wbrbr/realtime">Source code here</a></p>
+                <p>See the <a href='/portfolio.html'>portfolio</a> page for a showcase of some features</p>
             </div>
             <div class="project-img">
                 <img src="res/img/cornell_box.png" width=75% />
@@ -51,8 +68,15 @@
             </div>
             <div class="project-desc">
                 <h3>GameBoy emulator</h3>
-                <p>A WIP GameBoy emulator: as of now it can start a game of Tetris. It also has an integrated debugger with a memory and VRAM viewer.</p>
+                <p>A barebones GameBoy emulator: as of now it can start a game of Tetris. It also has an integrated debugger with a memory and VRAM viewer.</p>
                 <p><a href="https://github.com/wbrbr/gbemu">Source code here</a></p>
+            </div>
+            <div class='project-img'>
+            </div>
+            <div class='project-desc'>
+                <h3>toycc</h3>
+                <p>A <i>work-in-progress</i> C99 compiler targetting x86_64. Right now it is very incomplete and can only handle simple control flow and variables. The ultimate goal of the project is to have toycc compile itself.</p>
+                <p><a href='https://github.com/wbrbr/toycc'>Source code here</a></p>
             </div>
         </div>
     </body>
