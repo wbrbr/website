@@ -1,6 +1,3 @@
 [submodule "introshading"]
 	path = introshading
 	url = https://github.com/wbrbr/introshading
-[submodule "cv"]
-	path = cv
-	url = git@github.com:wbrbr/cv.git
