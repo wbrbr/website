@@ -1,0 +1,46 @@
+a:link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+}
+
+a:visited {
+    color: #333333;
+}
+
+body {
+    max-width: 52rem;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+main {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.button-list {
+    display: flex;
+    justify-content: space-evenly;
+    /*width: 40%;*/
+    max-width: 17em;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.button {
+    /*background-color: #eeeeee;*/
+    background-color: #dae5f8;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 0.3em;
+    text-decoration: none;
+}
+
+.button:hover {
+    /*box-shadow: 0.1em 0.1em 2px #cccccc;*/
+    background-color: #c9daf8;
+}
